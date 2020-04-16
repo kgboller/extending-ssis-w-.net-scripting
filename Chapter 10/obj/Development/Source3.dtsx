@@ -1,0 +1,2412 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/7/2014 9:23:43 PM"
+  DTS:CreationName="SSIS.Package.3"
+  DTS:CreatorComputerName="LAP004191"
+  DTS:CreatorName="ILIONX\jvanrossum"
+  DTS:DTSID="{14D3315B-85EB-4E3D-B155-1838DCE6E909}"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:LastModifiedProductVersion="11.0.5058.0"
+  DTS:LocaleID="1043"
+  DTS:ObjectName="Source3"
+  DTS:PackageType="5"
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{5182A68F-32D4-49AD-A552-EC01C4BC22B3}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DFT - Dummy Data"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F78B8F59-C50A-4C94-9A2B-060D4B4F1310}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DFT - Dummy Data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DFT - Dummy Data\DER - DoSomething 1"
+              componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="DER - DoSomething 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DFT - Dummy Data\DER - DoSomething 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Dummy Data\DER - DoSomething 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\DFT - Dummy Data\DER - DoSomething 1.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - Dummy Data\DER - DoSomething 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\DFT - Dummy Data\DER - DoSomething 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\DER - DoSomething 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Dummy Data\DER - DoSomething 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\DER - DoSomething 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Dummy Data\DER - DoSomething 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - Dummy Data\DER - DoSomething 2"
+              componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="DER - DoSomething 2"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DFT - Dummy Data\DER - DoSomething 2.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Dummy Data\DER - DoSomething 2.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\DFT - Dummy Data\DER - DoSomething 2.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - Dummy Data\DER - DoSomething 2.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\DFT - Dummy Data\DER - DoSomething 2.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\DER - DoSomething 2.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Dummy Data\DER - DoSomething 2.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\DER - DoSomething 2.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Dummy Data\DER - DoSomething 2.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;8"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="SCR_SRC - Dummy Data C#"
+              version="8">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public Output0Buffer Output0Buffer;
+
+    public virtual void FinishOutputs()
+    {
+    }
+
+    private void MarkOutputsFinished()
+    {
+
+        if (null != Output0Buffer)
+        {
+            Output0Buffer.SetEndOfRowset();
+            Output0Buffer = null;
+        }
+
+    }
+
+    public override void PrimeOutput(int Outputs, int[] OutputIDs, PipelineBuffer[] Buffers, OutputNameMap OutputMap)
+    {
+       for(int Idx = 0; Idx < Outputs; Idx++)
+       {
+            if(OutputIDs[Idx] == GetOutputID(OutputMap, @"Output 0"))
+            {
+                Output0Buffer = new Output0Buffer(Buffers[Idx], GetColumnIndexes(OutputIDs[Idx]), OutputMap);
+            }
+        }
+
+        CreateNewOutputRows();
+
+        FinishOutputs();
+        MarkOutputsFinished();
+
+    }
+
+    public virtual void CreateNewOutputRows()
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// Generate sample data
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+  // Configure the number of rows to generate
+  private int numberOfRows = 1000;
+
+  // List of comma seperated string values to pick from
+  private string randomNames = "Smith,Johnson,Williams,Brown,Jones,Miller,Davis,Garcia,Rodriguez,Wilson";
+
+  // List of chars to create strings
+  private string chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+  // Standard method to generate new rows
+  public override void CreateNewOutputRows()
+  {
+    // Loop until numberOfRows has been reached. The i will also
+    // be used to generate a different random value per row.
+    for (int i = 0; i < numberOfRows; i++)
+    {
+      // Add a new row
+      Output0Buffer.AddRow();
+      // Datatype: string [DT_STR]
+      Output0Buffer.Name = pickRandomString(randomNames, new Random(i));
+      // Datatype: string [DT_STR]
+      Output0Buffer.Street = createRandomString(chars, 10, new Random(i));
+      // Datatype: four-byte signed integer [DT_I4]
+      Output0Buffer.HouseNumber = pickRandomNumber(1, 10, new Random(i));
+      // Datatype: date [DT_DATE]
+      Output0Buffer.DateOfBirth = pickRandomDate(new DateTime(1974, 01, 01), new DateTime(1999, 12, 31), new Random(i));
+      // Datatype: currency [DT_CY]
+      Output0Buffer.Price = Convert.ToDecimal(pickRandomNumber(Convert.ToDouble(0), Convert.ToDouble(10000), new Random(i)));
+      // Datatype: numeric [DT_NUMERIC]
+      Output0Buffer.Percentage = Convert.ToDecimal(pickRandomNumber(Convert.ToDouble(0), Convert.ToDouble(100), new Random(i)));
+      // Datatype: string [DT_STR]
+      Output0Buffer.Gender = pickRandomString("M,F", new Random(i));
+    }
+  }
+
+  #region RandomMethods
+  // Pass a string and pick one randomly
+  private string pickRandomString(string stringlist, Random rndNumber)
+  {
+    // Split string in array of strings
+    string[] strings = stringlist.Split(',');
+
+    // Pick one randomly and return it
+    return strings[rndNumber.Next(strings.Length)];
+  }
+
+  // Create string whith random chars from charcollection
+  private string createRandomString(string chars, int max, Random rndNumber)
+  {
+    // Comment out this row to create
+    // string with the same length
+    max = rndNumber.Next(1, max);
+
+    // Create an array of chars with a certain length
+    char[] stringChars = new char[max];
+
+    // Fill each array item with a random char
+    for (int i = 0; i < stringChars.Length; i++)
+    {
+      stringChars[i] = chars[rndNumber.Next(chars.Length)];
+    }
+
+    // Convert the array of chars to string and return it
+    return new String(stringChars);
+  }
+
+  // Pick a random number between min and max value
+  private int pickRandomNumber(int min, int max, Random rndNumber)
+  {
+    // Pick a random number/integer
+    return rndNumber.Next(min, max);
+  }
+
+  // Pick a random number between min and max value
+  public double pickRandomNumber(double min, double max, Random rndNumber)
+  {
+    // Pick a random number/double
+    return rndNumber.NextDouble() * (max - min) + min;
+  }
+
+  // Pick a random date between min and max date
+  public static DateTime pickRandomDate(DateTime from, DateTime to, Random rndNumber)
+  {
+    // Calculate difference between to and from
+    TimeSpan range = to - from;
+
+    // Determine random increment
+    TimeSpan randTimeSpan = new TimeSpan((long)(rndNumber.NextDouble() * range.Ticks));
+
+    // Return sum of from + random increment
+    return (from + randTimeSpan).Date;
+  }
+  #endregion
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Output0Buffer: ScriptBuffer
+
+{
+    public Output0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String Name
+    {
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool Name_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String Street
+    {
+        set
+        {
+            this[1] = value;
+        }
+    }
+    public bool Street_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(1);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Int32 HouseNumber
+    {
+        set
+        {
+            this[2] = value;
+        }
+    }
+    public bool HouseNumber_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(2);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public DateTime DateOfBirth
+    {
+        set
+        {
+            this[3] = value;
+        }
+    }
+    public bool DateOfBirth_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(3);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Decimal Price
+    {
+        set
+        {
+            this[4] = value;
+        }
+    }
+    public bool Price_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(4);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Decimal Percentage
+    {
+        set
+        {
+            this[5] = value;
+        }
+    }
+    public bool Percentage_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(5);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String Gender
+    {
+        set
+        {
+            this[6] = value;
+        }
+    }
+    public bool Gender_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(6);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public void AddRow()
+    {
+        base.AddRow();
+    }
+
+    new public void SetEndOfRowset()
+    {
+        base.SetEndOfRowset();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_3de96adb9f00445ab0ce8400bfb46680.Properties.Settings.get_Default():SC_3de96adb9f00445ab0ce8400bfb46680.Properties.Sett" +
+    "ings")]
+
+namespace SC_3de96adb9f00445ab0ce8400bfb46680.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_3de96adb9f00445ab0ce8400bfb46680.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E1F6465-EAEC-4E9A-A274-F77AD1200139}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_3de96adb9f00445ab0ce8400bfb46680</RootNamespace>
+    <AssemblyName>SC_3de96adb9f00445ab0ce8400bfb46680</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
+        <Host Name="ScriptComponent" IconIndex="0" />
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC110</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+	<msb:PropertyGroup>
+		<msb:CodeName>SC_3de96adb9f00445ab0ce8400bfb46680</msb:CodeName>
+		<msb:Language>msBuild</msb:Language>
+		<msb:DisplayName>SC_3de96adb9f00445ab0ce8400bfb46680</msb:DisplayName>
+		<msb:ProjectId>{E7B957ED-575A-4413-BAB4-B9223EDCE888}</msb:ProjectId>
+	</msb:PropertyGroup>
+	<msb:ItemGroup>
+		<msb:Project Include="SC_3de96adb9f00445ab0ce8400bfb46680.csproj"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\Resources.resx"/>
+		<msb:File Include="Properties\Resources.Designer.cs"/>
+		<msb:File Include="Properties\Settings.Designer.cs"/>
+		<msb:File Include="main.cs"/>
+		<msb:File Include="BufferWrapper.cs"/>
+		<msb:File Include="ComponentWrapper.cs"/>
+	</msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_3de96adb9f00445ab0ce8400bfb46680")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_3de96adb9f00445ab0ce8400bfb46680")]
+[assembly: AssemblyCopyright("Copyright @  2014")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_3de96adb9f00445ab0ce8400bfb46680.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_3de96adb9f00445ab0ce8400bfb46680.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_3de96adb9f00445ab0ce8400bfb46680.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_3de96adb9f00445ab0ce8400bfb46680.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_3de96adb9f00445ab0ce8400bfb46680.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_3de96adb9f00445ab0ce8400bfb46680.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[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
+AQAHAA8ACAARAAAAVAOIAAAAWQOMAAAAZQOIAAAAbAOMAAAAegOQAAAAhgOMAAAAmQOUAAAApQOM
+AAAAuAOZAAAAvgOMAAAAywOZAAAA1gOMAAAA6AOIAAAA7wOMAAAAHgTAAAAAlwTFAAAAuwTTAAEA
+DgADAAEADwAFAAEAEAAHAAEAEQAJAAEAEgALAAEAEwANAAEAFAAPAAEAFQARAAEAFgATAAEAFwAV
+AAEAGAAXAAEAGQAZAAEAGgAbAAEAGwAdAAIAIgAfAAIAIwAhAAEAJAAhAAIAJQAjAASAAAABAAAA
+UBUjoQAAAAAAAMcGAAALAAAAAAAAAAAAAAABALEAAAAAAAQAAAAAAAAAAAAAAAoADAEAAAAABAAA
+AAAAAAAAAAAACgAVAQAAAAALAAAAAAAAAAAAAAABAHgBAAAAAAAAAAABAAAAvggAAAAAADxNb2R1
+bGU+AFNDXzNkZTk2YWRiOWYwMDQ0NWFiMGNlODQwMGJmYjQ2NjgwLmRsbABVc2VyQ29tcG9uZW50
+AFNjcmlwdE1haW4AT3V0cHV0MEJ1ZmZlcgBDb25uZWN0aW9ucwBWYXJpYWJsZXMAUmVzb3VyY2Vz
+AFNDXzNkZTk2YWRiOWYwMDQ0NWFiMGNlODQwMGJmYjQ2NjgwLlByb3BlcnRpZXMAU2V0dGluZ3MA
+TWljcm9zb2Z0LlNxbFNlcnZlci5UeFNjcmlwdABNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5QaXBl
+bGluZQBTY3JpcHRDb21wb25lbnQAU2NyaXB0QnVmZmVyAG1zY29ybGliAFN5c3RlbQBPYmplY3QA
+U3lzdGVtLkNvbmZpZ3VyYXRpb24AQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UALmN0b3IARmluaXNo
+T3V0cHV0cwBNYXJrT3V0cHV0c0ZpbmlzaGVkAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuUGlwZWxpbmVI
+b3N0AFBpcGVsaW5lQnVmZmVyAE91dHB1dE5hbWVNYXAAUHJpbWVPdXRwdXQAQ3JlYXRlTmV3T3V0
+cHV0Um93cwBudW1iZXJPZlJvd3MAcmFuZG9tTmFtZXMAY2hhcnMAUmFuZG9tAHBpY2tSYW5kb21T
+dHJpbmcAY3JlYXRlUmFuZG9tU3RyaW5nAHBpY2tSYW5kb21OdW1iZXIARGF0ZVRpbWUAcGlja1Jh
+bmRvbURhdGUAc2V0X05hbWUAc2V0X05hbWVfSXNOdWxsAHNldF9TdHJlZXQAc2V0X1N0cmVldF9J
+c051bGwAc2V0X0hvdXNlTnVtYmVyAHNldF9Ib3VzZU51bWJlcl9Jc051bGwAc2V0X0RhdGVPZkJp
+cnRoAHNldF9EYXRlT2ZCaXJ0aF9Jc051bGwARGVjaW1hbABzZXRfUHJpY2UAc2V0X1ByaWNlX0lz
+TnVsbABzZXRfUGVyY2VudGFnZQBzZXRfUGVyY2VudGFnZV9Jc051bGwAc2V0X0dlbmRlcgBzZXRf
+R2VuZGVyX0lzTnVsbABBZGRSb3cAU2V0RW5kT2ZSb3dzZXQARW5kT2ZSb3dzZXQATmFtZQBOYW1l
+X0lzTnVsbABTdHJlZXQAU3RyZWV0X0lzTnVsbABIb3VzZU51bWJlcgBIb3VzZU51bWJlcl9Jc051
+bGwARGF0ZU9mQmlydGgARGF0ZU9mQmlydGhfSXNOdWxsAFByaWNlAFByaWNlX0lzTnVsbABQZXJj
+ZW50YWdlAFBlcmNlbnRhZ2VfSXNOdWxsAEdlbmRlcgBHZW5kZXJfSXNOdWxsAFBhcmVudENvbXBv
+bmVudABTeXN0ZW0uUmVzb3VyY2VzAFJlc291cmNlTWFuYWdlcgByZXNvdXJjZU1hbgBTeXN0ZW0u
+R2xvYmFsaXphdGlvbgBDdWx0dXJlSW5mbwByZXNvdXJjZUN1bHR1cmUAZ2V0X1Jlc291cmNlTWFu
+YWdlcgBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQBDdWx0dXJlAGRlZmF1bHRJbnN0YW5jZQBnZXRf
+RGVmYXVsdABEZWZhdWx0AE91dHB1dHMAT3V0cHV0SURzAEJ1ZmZlcnMAT3V0cHV0TWFwAHN0cmlu
+Z2xpc3QAcm5kTnVtYmVyAG1heABtaW4AZnJvbQB0bwBCdWZmZXIAQnVmZmVyQ29sdW1uSW5kZXhl
+cwB2YWx1ZQBDb21wb25lbnQAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBUYXJnZXRGcmFtZXdv
+cmtBdHRyaWJ1dGUAU3lzdGVtLlJlZmxlY3Rpb24AQXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3Nl
+bWJseURlc2NyaXB0aW9uQXR0cmlidXRlAEFzc2VtYmx5Q29uZmlndXJhdGlvbkF0dHJpYnV0ZQBB
+c3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAQXNzZW1ibHlQcm9kdWN0QXR0cmlidXRlAEFzc2VtYmx5
+Q29weXJpZ2h0QXR0cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAEFzc2VtYmx5Q3Vs
+dHVyZUF0dHJpYnV0ZQBBc3NlbWJseVZlcnNpb25BdHRyaWJ1dGUAU3lzdGVtLlJ1bnRpbWUuQ29t
+cGlsZXJTZXJ2aWNlcwBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAFJ1bnRpbWVDb21w
+YXRpYmlsaXR5QXR0cmlidXRlAFNDXzNkZTk2YWRiOWYwMDQ0NWFiMGNlODQwMGJmYjQ2NjgwAEdl
+dE91dHB1dElEAEdldENvbHVtbkluZGV4ZXMAU1NJU1NjcmlwdENvbXBvbmVudEVudHJ5UG9pbnRB
+dHRyaWJ1dGUAQ29udmVydABUb0RvdWJsZQBUb0RlY2ltYWwAQ2hhcgBTdHJpbmcAU3BsaXQATmV4
+dABnZXRfTGVuZ3RoAGdldF9DaGFycwBOZXh0RG91YmxlAFRpbWVTcGFuAG9wX1N1YnRyYWN0aW9u
+AGdldF9UaWNrcwBvcF9BZGRpdGlvbgBnZXRfRGF0ZQBzZXRfSXRlbQBTZXROdWxsAEludmFsaWRP
+cGVyYXRpb25FeGNlcHRpb24ASW50MzIAU3lzdGVtLkRpYWdub3N0aWNzAERlYnVnZ2VyTm9uVXNl
+ckNvZGVBdHRyaWJ1dGUAVHlwZQBSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRsZQBB
+c3NlbWJseQBnZXRfQXNzZW1ibHkAU3lzdGVtLkNvbXBvbmVudE1vZGVsAEVkaXRvckJyb3dzYWJs
+ZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVTdGF0ZQBDb21waWxlckdlbmVyYXRlZEF0dHJpYnV0
+ZQAuY2N0b3IAU0NfM2RlOTZhZGI5ZjAwNDQ1YWIwY2U4NDAwYmZiNDY2ODAuUHJvcGVydGllcy5S
+ZXNvdXJjZXMucmVzb3VyY2VzAAAAAAARTwB1AHQAcAB1AHQAIAAwAAAHTQAsAEYAAICPUwBtAGkA
+dABoACwASgBvAGgAbgBzAG8AbgAsAFcAaQBsAGwAaQBhAG0AcwAsAEIAcgBvAHcAbgAsAEoAbwBu
+AGUAcwAsAE0AaQBsAGwAZQByACwARABhAHYAaQBzACwARwBhAHIAYwBpAGEALABSAG8AZAByAGkA
+ZwB1AGUAegAsAFcAaQBsAHMAbwBuAAB9MAAxADIAMwA0ADUANgA3ADgAOQBBAEIAQwBEAEUARgBH
+AEgASQBKAEsATABNAE4ATwBQAFEAUgBTAFQAVQBWAFcAWABZAFoAYQBiAGMAZABlAGYAZwBoAGkA
+agBrAGwAbQBuAG8AcABxAHIAcwB0AHUAdgB3AHgAeQB6AACAm0kAcwBOAHUAbABsACAAcAByAG8A
+cABlAHIAdAB5ACAAYwBhAG4AbgBvAHQAIABiAGUAIABzAGUAdAAgAHQAbwAgAEYAYQBsAHMAZQAu
+ACAAQQBzAHMAaQBnAG4AIABhACAAdgBhAGwAdQBlACAAdABvACAAdABoAGUAIABjAG8AbAB1AG0A
+bgAgAGkAbgBzAHQAZQBhAGQALgAAcVMAQwBfADMAZABlADkANgBhAGQAYgA5AGYAMAAwADQANAA1
+AGEAYgAwAGMAZQA4ADQAMAAwAGIAZgBiADQANgA2ADgAMAAuAFAAcgBvAHAAZQByAHQAaQBlAHMA
+LgBSAGUAcwBvAHUAcgBjAGUAcwAAAAAAmHU8Igf14k+u7LifgqaFbgAIiYRdzYCAzJEIt3pcVhk0
+4IkDBhIUAwYSGAMgAAEDBhIQCyAEAQgdCB0SFRIZAgYIAgYOBiACDg4SHQcgAw4OCBIdByADCAgI
+Eh0HIAMNDQ0SHQoAAxEhESERIRIdCSADARIVHQgSGQQgAQEOBCABAQIEIAEBCAUgAQERIQUgAQER
+JQMgAAIDKAAOAygAAgMoAAgEKAARIQQoABElAwYSBQUgAQESBQMGEikDBhItBAAAEikEAAASLQUA
+AQESLQQIABIpBAgAEi0DBhIgBAAAEiAECAASIAYAAggSGQ4FIAEdCAgDBwEIBAEAAAAGIAMBCAgI
+BAABDQgFAAERJQ0GIAEdDh0DBCABCAgGBwIdDh0DBSACCAgIAyAACAQgAQMIBSABAR0DBQcCHQMI
+AyAADQgAAhFxESERIQMgAAoEIAEBCggAAhEhESERcQQgABEhCAcDEXERcREhBSACAQgcCAABEoCB
+EYCFBSAAEoCJByACAQ4SgIkEBwESKQYgAQERgJEIAQACAAAAAAADAAABRwEAGi5ORVRGcmFtZXdv
+cmssVmVyc2lvbj12NC4wAQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFtZRAuTkVUIEZyYW1ld29yayA0
+KAEAI1NDXzNkZTk2YWRiOWYwMDQ0NWFiMGNlODQwMGJmYjQ2NjgwAAAFAQAAAAAWAQARQ29weXJp
+Z2h0IEAgIDIwMTQAAAgBAAgAAAAAAB4BAAEAVAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEAUDsA
+AAAAAAAAAAAAbjsAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGA7AAAAAAAAAAAAAAAAAAAAAF9D
+b3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB
+ABAAAAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAAAABIAAAA
+WEAAALADAAAAAAAAAAAAALADNAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBPAAAAAAC9
+BO/+AAABAAAAAQAjoVAVAAABACOhUBU/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAAAAEA
+VgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBvAG4AAAAA
+AAAAsAQQAwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAADsAgAAAQAwADAAMAAwADAA
+NABiADAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAAUwBDAF8AMwBk
+AGUAOQA2AGEAZABiADkAZgAwADAANAA0ADUAYQBiADAAYwBlADgANAAwADAAYgBmAGIANAA2ADYA
+OAAwAAAAQAAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADUANAA1ADYALgA0
+ADEAMgA1ADEAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBDAF8AMwBkAGUA
+OQA2AGEAZABiADkAZgAwADAANAA0ADUAYQBiADAAYwBlADgANAAwADAAYgBmAGIANAA2ADYAOAAw
+AC4AZABsAGwAAABIABIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQAAABDAG8AcAB5AHIA
+aQBnAGgAdAAgAEAAIAAgADIAMAAxADQAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBu
+AGEAbQBlAAAAUwBDAF8AMwBkAGUAOQA2AGEAZABiADkAZgAwADAANAA0ADUAYQBiADAAYwBlADgA
+NAAwADAAYgBmAGIANAA2ADYAOAAwAC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBt
+AGUAAAAAAFMAQwBfADMAZABlADkANgBhAGQAYgA5AGYAMAAwADQANAA1AGEAYgAwAGMAZQA4ADQA
+MAAwAGIAZgBiADQANgA2ADgAMAAAAEQADwABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAA
+ADEALgAwAC4ANQA0ADUANgAuADQAMQAyADUAMQAAAAAASAAPAAEAQQBzAHMAZQBtAGIAbAB5ACAA
+VgBlAHIAcwBpAG8AbgAAADEALgAwAC4ANQA0ADUANgAuADQAMQAyADUAMQAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAwAAACAOwAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_3de96adb9f00445ab0ce8400bfb46680</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages, Microsoft.SqlServer.VSTAScriptingLib, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum"
+                  typeConverter="NOTBROWSABLE">286c69d889218c11e8b1f6b096eaf069</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.ScriptComponentHost, Microsoft.SqlServer.TxScript, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+              </properties>
+              <outputs>
+                <output
+                  refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#.Outputs[Output 0]"
+                  hasSideEffects="true"
+                  name="Output 0">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#.Outputs[Output 0].Columns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#.Outputs[Output 0].Columns[Name]"
+                      name="Name" />
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#.Outputs[Output 0].Columns[Street]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#.Outputs[Output 0].Columns[Street]"
+                      name="Street" />
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#.Outputs[Output 0].Columns[HouseNumber]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#.Outputs[Output 0].Columns[HouseNumber]"
+                      name="HouseNumber" />
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#.Outputs[Output 0].Columns[DateOfBirth]"
+                      dataType="date"
+                      lineageId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#.Outputs[Output 0].Columns[DateOfBirth]"
+                      name="DateOfBirth" />
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#.Outputs[Output 0].Columns[Price]"
+                      dataType="cy"
+                      lineageId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#.Outputs[Output 0].Columns[Price]"
+                      name="Price" />
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#.Outputs[Output 0].Columns[Percentage]"
+                      dataType="numeric"
+                      lineageId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#.Outputs[Output 0].Columns[Percentage]"
+                      name="Percentage"
+                      precision="5"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#.Outputs[Output 0].Columns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#.Outputs[Output 0].Columns[Gender]"
+                      name="Gender" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;8"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="SCR_SRC - Dummy Data VB"
+              version="8">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_aa8691c894864b06aeed96b2264cf266.vbproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ca892bb8-3b86-41b7-b6cf-0bba4fdc79df}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>My Project</AppDesignerFolder>
+    <RootNamespace>SC_aa8691c894864b06aeed96b2264cf266</RootNamespace>
+    <AssemblyName>SC_aa8691c894864b06aeed96b2264cf266</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- This sections specifies references for the project. -->
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.vb" />
+    <Compile Include="BufferWrapper.vb" />
+    <Compile Include="ComponentWrapper.vb" />
+  </ItemGroup>
+  <!-- Visual Basic supports Importing namespaces (equivalent to using statements in C#).-->
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="My Project\" />
+    <Compile Include="My Project\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a VB project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="SSIS_SC110" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="vb" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="SSIS_SC110" IconIndex=""></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC110</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[My Project\AssemblyInfo.vb]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Imports System
+Imports System.Reflection
+Imports System.Runtime.InteropServices
+
+' General Information about an assembly is controlled through the following 
+' set of attributes. Change these attribute values to modify the information
+' associated with an assembly.
+
+' Review the values of the assembly attributes
+
+<Assembly: AssemblyTitle("SC_aa8691c894864b06aeed96b2264cf266")> 
+<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyCompany("")> 
+<Assembly: AssemblyProduct("SC_aa8691c894864b06aeed96b2264cf266")> 
+<Assembly: AssemblyCopyright("Copyright @  2014")> 
+<Assembly: AssemblyTrademark("")> 
+<Assembly: CLSCompliant(True)> 
+
+<Assembly: ComVisible(False)> 
+
+'The following GUID is for the ID of the typelib if this project is exposed to COM
+<Assembly: Guid("d2bfb0f5-0679-4dd7-aa26-64dbec838273")> 
+
+' Version information for an assembly consists of the following four values:
+'
+'      Major Version
+'      Minor Version 
+'      Build Number
+'      Revision
+'
+' You can specify all the values or you can default the Build and Revision Numbers 
+' by using the '*' as shown below:
+' <Assembly: AssemblyVersion("1.0.*")>
+
+<Assembly: AssemblyVersion("1.0.0.0")> 
+<Assembly: AssemblyFileVersion("1.0.0.0")> 
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.vb]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[' THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+' Microsoft SQL Server Integration Services component wrapper
+' This module defines the base class for your component
+' THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+
+Imports System
+Imports System.Data
+Imports Microsoft.SqlServer.Dts.Pipeline
+Imports Microsoft.SqlServer.Dts.Pipeline.Wrapper
+Imports Microsoft.SqlServer.Dts.Runtime.Wrapper
+
+<CLSCompliant(False)> _
+Public Class UserComponent
+    Inherits ScriptComponent
+
+    Public Connections As New Connections(Me)
+    Public Variables As New Variables(Me)
+
+    Public Output0Buffer As Output0Buffer
+
+    Public Overridable Sub FinishOutputs()
+    End Sub
+
+    Private Sub MarkOutputsFinished()
+
+        If Output0Buffer IsNot Nothing Then
+            Output0Buffer.SetEndOfRowset
+            Output0Buffer = Nothing
+        End If
+
+    End Sub
+
+    Public Overrides Sub PrimeOutput(ByVal Outputs As Integer, ByVal OutputIDs() As Integer, ByVal Buffers() As PipelineBuffer, ByVal OutputMap As OutputNameMap)
+
+        For I As Integer = 0 To Outputs - 1
+            If OutputIDs(I) = GetOutputID(OutputMap, "Output 0") Then
+                Output0Buffer = New Output0Buffer(Buffers(I), GetColumnIndexes(OutputIDs(I)), OutputMap)
+            End If
+        Next
+
+        CreateNewOutputRows()
+
+        FinishOutputs()
+        MarkOutputsFinished()
+
+    End Sub
+
+    Public Overridable Sub CreateNewOutputRows()
+    End Sub
+
+End Class
+
+<CLSCompliant(False)> _
+Public Class Connections
+
+    Dim ParentComponent As ScriptComponent
+
+    <CLSCompliant(False)> _
+    Public Sub New(ByVal Component As ScriptComponent)
+        ParentComponent = Component
+    End Sub
+
+End Class
+
+<CLSCompliant(False)> _
+Public Class Variables
+
+    Dim ParentComponent As ScriptComponent
+
+    <CLSCompliant(False)> _
+    Public Sub New(ByVal Component As ScriptComponent)
+        ParentComponent = Component
+    End Sub
+
+End Class
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[My Project\Settings.Designer.vb]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA['------------------------------------------------------------------------------
+' <autogenerated>
+'     This code was generated by a tool.
+'
+'     Changes to this file may cause incorrect behavior and will be lost if
+'     the code is regenerated.
+' </autogenerated>
+'------------------------------------------------------------------------------
+
+Option Strict Off
+Option Explicit On
+
+
+
+Partial Friend NotInheritable Class MySettings
+    Inherits System.Configuration.ApplicationSettingsBase
+
+    Private Shared m_Value As MySettings
+
+    Private Shared m_SyncObject As Object = New Object
+
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Public Shared ReadOnly Property Value() As MySettings
+        Get
+            If (MySettings.m_Value Is Nothing) Then
+                System.Threading.Monitor.Enter(MySettings.m_SyncObject)
+                If (MySettings.m_Value Is Nothing) Then
+                    Try
+                        MySettings.m_Value = New MySettings
+                    Finally
+                        System.Threading.Monitor.Exit(MySettings.m_SyncObject)
+                    End Try
+                End If
+            End If
+            Return MySettings.m_Value
+        End Get
+    End Property
+End Class
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[My Project\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="MySettings">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.vb]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#Region "Imports"
+Imports System
+Imports System.Data
+Imports System.Math
+Imports Microsoft.SqlServer.Dts.Pipeline.Wrapper
+Imports Microsoft.SqlServer.Dts.Runtime.Wrapper
+#End Region
+
+' This is the class to which to add your code.  Do not change the name, attributes, or parent
+' of this class.
+<Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute> _
+<CLSCompliant(False)> _
+Public Class ScriptMain
+  Inherits UserComponent
+
+  ' Configure the number of rows to generate
+  Private numberOfRows As Integer = 1000
+
+  ' List of comma seperated string values to pick from
+  Private randomNames As String = "Smith,Johnson,Williams,Brown,Jones,Miller,Davis,Garcia,Rodriguez,Wilson"
+
+  ' List of chars to create strings
+  Private chars As String = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+
+  ' Standard method to generate new rows
+  Public Overrides Sub CreateNewOutputRows()
+    ' Loop until numberOfRows has been reached. The i will also
+    ' be used to generate a different random value per row.
+    For i As Integer = 0 To numberOfRows - 1
+      ' Add a new row
+      Output0Buffer.AddRow()
+      ' Datatype: string [DT_STR]
+      Output0Buffer.Name = pickRandomString(randomNames, New Random(i))
+      ' Datatype: string [DT_STR]
+      Output0Buffer.Street = createRandomString(chars, 10, New Random(i))
+      ' Datatype: four-byte signed integer [DT_I4]
+      Output0Buffer.HouseNumber = pickRandomNumber(1, 10, New Random(i))
+      ' Datatype: date [DT_DATE]
+      Output0Buffer.DateOfBirth = pickRandomDate(New DateTime(1974, 1, 1), New DateTime(1999, 12, 31), New Random(i))
+      ' Datatype: currency [DT_CY]
+      Output0Buffer.Price = Convert.ToDecimal(pickRandomNumber(Convert.ToDouble(0), Convert.ToDouble(10000), New Random(i)))
+      ' Datatype: numeric [DT_NUMERIC]
+      Output0Buffer.Percentage = Convert.ToDecimal(pickRandomNumber(Convert.ToDouble(0), Convert.ToDouble(100), New Random(i)))
+      ' Datatype: string [DT_STR]
+      Output0Buffer.Gender = pickRandomString("M,F", New Random(i))
+    Next
+  End Sub
+
+#Region "RandomMethods"
+  ' Pass a string and pick one randomly
+  Private Function pickRandomString(stringlist As String, rndNumber As Random) As String
+    ' Split string in array of strings
+    Dim strings As String() = stringlist.Split(","c)
+
+    ' Pick one randomly and return it
+    Return strings(rndNumber.[Next](strings.Length))
+  End Function
+
+  ' Create string whith random chars from charcollection
+  Private Function createRandomString(chars As String, max As Integer, rndNumber As Random) As String
+    ' Comment out this row to create
+    ' string with the same length
+    max = rndNumber.[Next](1, max)
+
+    ' Create an array of chars with a certain length
+    Dim stringChars As Char() = New Char(max - 1) {}
+
+    ' Fill each array item with a random char
+    For i As Integer = 0 To stringChars.Length - 1
+      stringChars(i) = chars(rndNumber.[Next](chars.Length))
+    Next
+
+    ' Convert the array of chars to string and return it
+    Return New [String](stringChars)
+  End Function
+
+  ' Pick a random number between min and max value
+  Private Function pickRandomNumber(min As Integer, max As Integer, rndNumber As Random) As Integer
+    ' Pick a random number/integer
+    Return rndNumber.[Next](min, max)
+  End Function
+
+  ' Pick a random number between min and max value
+  Public Function pickRandomNumber(min As Double, max As Double, rndNumber As Random) As Double
+    ' Pick a random number/double
+    Return rndNumber.NextDouble() * (max - min) + min
+  End Function
+
+  ' Pick a random date between min and max date
+  Public Shared Function pickRandomDate(from As DateTime, [to] As DateTime, rndNumber As Random) As DateTime
+    ' Calculate difference between to and from
+    Dim range As TimeSpan = [to] - from
+
+    ' Determine random increment
+    Dim randTimeSpan As New TimeSpan(CLng(rndNumber.NextDouble() * range.Ticks))
+
+    ' Return sum of from + random increment
+    Return (from + randTimeSpan).[Date]
+  End Function
+#End Region
+
+End Class
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.vb]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[' THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+' Microsoft SQL Server Integration Services buffer wrappers
+' This module defines classes for accessing data flow buffers
+' THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+
+
+Option Strict Off   ' This allows usage of PipelineBuffer typed accessors.
+
+Imports System
+Imports System.Data
+Imports Microsoft.SqlServer.Dts.Pipeline
+Imports Microsoft.SqlServer.Dts.Pipeline.Wrapper
+
+<CLSCompliant(False)> _
+Public Class Output0Buffer
+    Inherits ScriptBuffer
+
+    Public Sub New(ByVal Buffer As PipelineBuffer, ByVal BufferColumnIndexes As Integer(), ByVal OutputMap As OutputNameMap)
+        MyBase.New(Buffer, BufferColumnIndexes, OutputMap)
+    End Sub
+
+    Public WriteOnly Property [Name]() As String
+        Set
+            Me(0) = Value
+        End Set
+    End Property
+    Public WriteOnly Property [Name_IsNull] As Boolean
+        Set
+            If (value)
+                SetNull(0)
+            Else
+                Throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.")
+            End If
+        End Set
+    End Property
+
+    Public WriteOnly Property [Street]() As String
+        Set
+            Me(1) = Value
+        End Set
+    End Property
+    Public WriteOnly Property [Street_IsNull] As Boolean
+        Set
+            If (value)
+                SetNull(1)
+            Else
+                Throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.")
+            End If
+        End Set
+    End Property
+
+    Public WriteOnly Property [HouseNumber]() As Int32
+        Set
+            Me(2) = Value
+        End Set
+    End Property
+    Public WriteOnly Property [HouseNumber_IsNull] As Boolean
+        Set
+            If (value)
+                SetNull(2)
+            Else
+                Throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.")
+            End If
+        End Set
+    End Property
+
+    Public WriteOnly Property [DateOfBirth]() As DateTime
+        Set
+            Me(3) = Value
+        End Set
+    End Property
+    Public WriteOnly Property [DateOfBirth_IsNull] As Boolean
+        Set
+            If (value)
+                SetNull(3)
+            Else
+                Throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.")
+            End If
+        End Set
+    End Property
+
+    Public WriteOnly Property [Price]() As Decimal
+        Set
+            Me(4) = Value
+        End Set
+    End Property
+    Public WriteOnly Property [Price_IsNull] As Boolean
+        Set
+            If (value)
+                SetNull(4)
+            Else
+                Throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.")
+            End If
+        End Set
+    End Property
+
+    Public WriteOnly Property [Percentage]() As Decimal
+        Set
+            Me(5) = Value
+        End Set
+    End Property
+    Public WriteOnly Property [Percentage_IsNull] As Boolean
+        Set
+            If (value)
+                SetNull(5)
+            Else
+                Throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.")
+            End If
+        End Set
+    End Property
+
+    Public WriteOnly Property [Gender]() As String
+        Set
+            Me(6) = Value
+        End Set
+    End Property
+    Public WriteOnly Property [Gender_IsNull] As Boolean
+        Set
+            If (value)
+                SetNull(6)
+            Else
+                Throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.")
+            End If
+        End Set
+    End Property
+
+    Public Overloads Sub AddRow()
+        MyBase.AddRow()
+    End Sub
+
+    Public Overloads Sub SetEndOfRowset()
+        MyBase.SetEndOfRowset()
+    End Sub
+
+    Public Overloads Function EndOfRowset() As Boolean
+        EndOfRowset = MyBase.EndOfRowset
+    End Function
+
+End Class
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+	<msb:PropertyGroup>
+		<msb:Language>msBuild</msb:Language>
+		<msb:CodeName>SC_aa8691c894864b06aeed96b2264cf266</msb:CodeName>
+		<msb:DisplayName>SC_aa8691c894864b06aeed96b2264cf266</msb:DisplayName>
+		<msb:ProjectId>{0B231691-AECF-43F1-8571-BE9E1FDA16D2}</msb:ProjectId>
+	</msb:PropertyGroup>
+	<msb:ItemGroup>
+		<msb:Project Include="SC_aa8691c894864b06aeed96b2264cf266.vbproj"/>
+		<msb:File Include="My Project\AssemblyInfo.vb"/>
+		<msb:File Include="ComponentWrapper.vb"/>
+		<msb:File Include="My Project\Resources.resx"/>
+		<msb:File Include="My Project\Resources.Designer.vb"/>
+		<msb:File Include="My Project\Settings.settings"/>
+		<msb:File Include="BufferWrapper.vb"/>
+		<msb:File Include="main.vb"/>
+		<msb:File Include="My Project\Settings.Designer.vb"/>
+	</msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[My Project\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[My Project\Resources.Designer.vb]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA['------------------------------------------------------------------------------
+' <autogenerated>
+'     This code was generated by a tool.
+'
+'     Changes to this file may cause incorrect behavior and will be lost if
+'     the code is regenerated.
+' </autogenerated>
+'------------------------------------------------------------------------------
+
+Option Strict Off
+Option Explicit On
+
+
+Namespace My.Resources
+    
+    '''<summary>
+    '''   A strongly-typed resource class, for looking up localized strings, etc.
+    '''</summary>
+    'This class was auto-generated by the Strongly Typed Resource Builder
+    'class via a tool like ResGen or Visual Studio.NET.
+    'To add or remove a member, edit your .ResX file then rerun ResGen
+    'with the /str option, or rebuild your VS project.
+    Class MyResources
+        
+        Private Shared _resMgr As System.Resources.ResourceManager
+        
+        Private Shared _resCulture As System.Globalization.CultureInfo
+        
+        Friend Sub New()
+            MyBase.New
+        End Sub
+        
+        '''<summary>
+        '''   Returns the cached ResourceManager instance used by this class.
+        '''</summary>
+        <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
+        Public Shared ReadOnly Property ResourceManager() As System.Resources.ResourceManager
+            Get
+                If (_resMgr Is Nothing) Then
+                    Dim temp As System.Resources.ResourceManager = New System.Resources.ResourceManager("My.Resources.MyResources", GetType(MyResources).Assembly)
+                    _resMgr = temp
+                End If
+                Return _resMgr
+            End Get
+        End Property
+        
+        '''<summary>
+        '''   Overrides the current thread's CurrentUICulture property for all
+        '''   resource lookups using this strongly typed resource class.
+        '''</summary>
+        <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
+        Public Shared Property Culture() As System.Globalization.CultureInfo
+            Get
+                Return _resCulture
+            End Get
+            Set
+                _resCulture = value
+            End Set
+        End Property
+    End Class
+End Namespace
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_aa8691c894864b06aeed96b2264cf266.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[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
+AnsIAAAEAnK/AQBwBnMpAAAKbywAAAZvHgAABgYX1goGBz7t/v//KhMwBAAgAAAADwAAEQMXjSEA
+AAEMCBYfLJ0Iby0AAAoLBwQHjrdvLgAACpoqEzAFAEMAAAAQAAARBRcEby8AAAoQAgQX2hfWjSEA
+AAELFgeOtxfaDQwrGQcIAwUDbzAAAApvLgAACm8xAAAKnQgX1gwICTHjB3MyAAAKKgATMAMACQAA
+ABEAABEFAwRvLwAACioAAAATMAMADQAAABIAABEFbzMAAAoEA1laA1gqAAAAEzADADQAAAATAAAR
+AwIoNAAACgwSAQRvMwAAChICKDUAAApsWig2AAAKuSg3AAAKAgcoOAAACg0SAyg5AAAKKh4CKBcA
+AAoqEzACAC0AAAAUAAARfg4AAAQtIHLHAQBw0AwAAAIoFAAACm87AAAKczwAAAoLB4AOAAAEfg4A
+AAQqAAAAEzABAAYAAAAVAAARfg8AAAQqAAAeAoAPAAAEKkJzFwAACigRAAAKgBEAAAQqAAAAHgIo
+PQAACiobMAEAPwAAABYAABF+EAAABC0yfhEAAAQoEQAACig+AAAKfhAAAAQtHHM2AAAGgBAAAATe
+EH4RAAAEKBEAAAooPwAACtx+EAAABCoAARAAAAIAHQAMKQAQAAAAALQAAADOyu++AQAAAJEAAABs
+U3lzdGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAu
+MCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3Rl
+bS5SZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAABCU0pC
+AQABAAAAAAAMAAAAdjQuMC4zMDMxOQAAAAAFAGwAAADwCwAAI34AAFwMAACoDAAAI1N0cmluZ3MA
+AAAABBkAAPwBAAAjVVMAABsAABAAAAAjR1VJRAAAABAbAACIBAAAI0Jsb2IAAAAAAAAAAgAAAVcV
+ogkJDwAAAPolMwAWAAABAAAAMwAAAA0AAAARAAAANwAAACkAAABLAAAAPAAAABYAAAAFAAAAFgAA
+ABcAAAAJAAAAAQAAAAUAAAABAAAAAgAAAAMAAAACAAAAAAB+DAEAAAAAAAoAbwFFAQoAowGFAQYA
+swGsAQoACwJFAQYAiQKsAQoACwPhAg4AbgNNAxIAnANNAw4AqwNNAwYAQQSsAQYAcQSsAQ4AoQVN
+AwYARgasAQYAxwa2BgYA9AbfBhYAVQdABxYAogeMBxYAuweMBxYA6AfQBwYAEgj/BwoAUQgqCAoA
+aQgTABYAngiBCAYA0wizCAYA8QisAQYAFQmsAQoALgkTAAYAcglTCQYAlwmsAQYAsQmsAQYAtwms
+AQYA6gmsAQYABQqsAQYACgqsAQYAPAqsAQYAXgqsAQ4AfgpNAwYAtwqlCgYA3grNCgYA8Qr/BwYA
+RguzCAYAZguzCAYAnguECwYAtwulCgYA1AtTCQYA4gulCgYA/QulCgYAGAylCgYAMQylCgYASgyl
+CgYAZwylCgAAAAABAAAAAAABAAEAAAAAACkANwAFAAEAAQAAAAAAXgA3AAkAAQACAAABEABpADcA
+DQABAAMABQEAAHMAAAANAAUACAAFAQAAgQAAAA0ABQAPAAEAAACcAKoAHQAGABEAAQAAAM4AqgAx
+AAYAIwABAAAA3ACqAA0ACQAoAAEAAADoAKoADQAKACkAAQAAAPIAqgAgAAsAKgAAAAAA/QAJAQ0A
+DgAxAAABEAA6AaoAQQAQADUAMQDOASAAMQD3AS0AMQAZAjoAMQA+AkcAIQAaA5AABgDcAOUABgDo
+AOkABgCcAO0AAQANBv0AAQANBv0AAQAnBgcBAQA0BgoBAQBABgoBEQDXBjcBEQAABzsBEQBtB1kB
+EQB1B10BUCAAAAAABhh/ARMAAQBYIAAAAAAGGH8BEwABAGAgAAAAABEYugEXAAEAjCAAAAAAEwjB
+ARsAAQCkIAAAAAATCOcBKAABALwgAAAAABMIEAI1AAEA1CAAAAAAEwguAkIAAQDsIAAAAABGAnQC
+YwABAAghAAAAAEYCfQJoAAIAHCEAAAAAgwCOAmwAAgA0IQAAAABGApYCcQACAEghAAAAABEAnwJ4
+AAIAZCEAAAAAAQC9AoAAAwCAIQAAAAAGGH8BEwAEAIghAAAAAAMI0QKLAAQAvCEAAAAABhh/ARMA
+BADQIQAAAAAGGH8BpgAEANwhAAAAAAYI3gOwAAcA6CEAAAAABgjtA7UACAAEIgAAAAAGCP0DsAAJ
+ABAiAAAAAAYICAS1AAoALCIAAAAABggaBLoACwA8IgAAAAAGCCoEtQAMAFgiAAAAAAYISgS/AA0A
+aCIAAAAABghaBLUADgCEIgAAAAAGCHkExQAPAJQiAAAAAAYIgwS1ABAAsCIAAAAABgiUBMUAEQDA
+IgAAAAAGCKMEtQASANwiAAAAAAYIuQSwABMA6CIAAAAABgjEBLUAFAAEIwAAAACGANYEEwAVAAwj
+AAAAAIYA3QQTABUAFCMAAAAAhgDsBMsAFQAsIwAAAAAGGH8BEwAVAEwjAAAAAEYDsQUTABUAUCMA
+AAAAAQC/BRMAFQBsIwAAAABGAtMF8QAVAMgjAAAAAEYD+QUTABkAzCMAAAAABhh/AQEBGQDcIwAA
+AAAGGH8BAQEaAOwjAAAAAAYYfwETABsAGCQAAAAARgL5BRMAGwBIJQAAAAABAE0GDQEbAHQlAAAA
+AAEAcwYUAR0AxCUAAAAAAQCKBhwBIADcJQAAAAAGAIoGJAEjAPglAAAAABYAnwYsASYAOCYAAAAA
+Axh/ARMAKQBAJgAAAAAWCAwHPwEpAHwmAAAAABYIIAdEASkAkCYAAAAAFggsB0kBKQCYJgAAAAAR
+GLoBFwAqAKwmAAAAAAYYfwETACoAtCYAAAAAFgiCB2ABKgAAAAEAewIAAAEAtAIAAAEAtAIAAAEA
+uQMAAAIAwAMAAAMA1AMAAAEA5wMAAAEA5wMAAAEA5wMAAAEA5wMAAAEA5wMAAAEA5wMAAAEA5wMA
+AAEA5wMAAAEA5wMAAAEA5wMAAAEA5wMAAAEA5wMAAAEA5wMAAAEA5wMAAAEA3wUAAAIA5wUAAAMA
+8QUAAAQA1AMAAAEAHQYAAAEAHQYAAAEAXgYAAAIAaQYAAAEAQAYAAAIAhgYAAAMAaQYAAAEAmwYA
+AAIAhgYAAAMAaQYAAAEAmwYAAAIAhgYAAAMAaQYAAAEArgYAAAIAswYAAAMAaQYAAAEA5wMJAH8B
+EwCJAH8BagGZAH8BeQERAH8BEwChAH8BEwAkAH8BEwAsAH8BEwA0AH8BEwA8AH8BEwAkANECiwAs
+ANECiwA0ANECiwA8ANECiwCpAH8BEwCxAH8BEwC5AH8BsADBAOIIEwIZAHQCYwAZAH0CaAApAAMJ
+IAIZAJYCcQDRAB8JMAIZAH8BEwDZAH8BQAJEABoDkABMAIIHiwBMAEkJvQJMAH8BEwDhAH8BtQA5
+AH8BpgA5AIYJ0gI5AI8JugDpAH8BsAA5ANYEEwA5AN0EEwA5AOwEywD5AH8BtQBhAH8BEwBhAM0J
+2AJhANkJ3wJpAH8BugBRAH8B6gIBAfIJ8QIBAfsJ9gIRAREKBQNpABcKDANpABcKGQMRARwKaAAR
+AScKHwMRAX8BJANpADEKMgNRAEUKOgMZAVQKRAMhAWMKSAMZAX8BTQNRAGkKUgNRAHUKXAMpAX8B
+EwApAMAKbgNxAH8BdAOBAH8BEwA5AeYKkQM5AewKkQNBAX8BEwBJAX8BugBRAX8BEwBZAX8BsABh
+AX8BsABpAX8BsABxAX8BsAB5AX8BsACBAX8BsACJAX8BsACRAX8BsACZAX8BsAApAIMA9QEuAEMC
+XwQuAFsCXwQuADsCSAQuABMCpAMuABsCwwMuADMCzAIuAFMCzAIuAAsCmwMuAEsCzAIuACMCCwQu
+ACsCGAQuAOsAzAIuACsBQgRAACsAmAFAABMAcAFDABMAcAFDABsAfwFJAIMA4QFjABMAcAFjABsA
+fwFpAIMABgKAACsAmAGDAHMAmAGDAHsAmAGDABsAfwGJAIMAzQGgACsAmAGjAMMASAKjABMAcAHA
+ACsAmAHDABMAcAHDAOsAzALgACsAmAHjACsBzAIAASsAmAEAARMAcAEDASsBzAIgASsAmAEgARMA
+cAEjASsBzAJAARMAcAFAASsAmAFDASsBzAJgARMAcAFgASsAmAFjAdMBmAFjASsBzAKAASsAmAGg
+ASsAmAHAARMAcAHAASsAmAHgASsAmAEAAhMAcAEAAisAmAGJAhMAiAOpAhMAiAPJAgMCmAEABSsB
+zAIgBSsBzAK5Ab4BwwHIARgCHAInAiwCOwI7AsMCGALlAvwCEQMqAxwCNgNhA3wDgwOWAwQAAQAG
+AAUABwAGAAwAFAANABYAAACjAU8AAABcAlQAAAALAlkAAABoAl4AAAAkA5gAAAD4BM8AAAD9BNMA
+AAAJBc8AAAAQBdMAAAAeBdcAAAAqBdMAAAA9BdsAAABJBdMAAABcBeAAAABiBdMAAABvBeAAAAB6
+BdMAAACMBc8AAACTBdMAAADHBk8BAAA4B1QBAADnA2UBAgAEAAMAAgAFAAUAAgAGAAcAAgAHAAkA
+AgAPAAsAAQASAA0AAQATAA8AAQAUABEAAQAVABMAAQAWABUAAQAXABcAAQAYABkAAQAZABsAAQAa
+AB0AAQAbAB8AAQAcACEAAQAdACMAAQAeACUAAQAfACcAAgAyACkAAgAzACsAAQA0ACsAAgA3AC0A
+dQB1AIgAnQGkAasBsgGqArECBIAAAAEAAAAAAAAAAAAAAAAAqgAAAAQAAAAAAAAAAAAAAAEACgAA
+AAAACgAAAAAAAAAAAAAACgATAAAAAAALAAAAAAAAAAAAAACdADADAAAAAAsAAAAAAAAAAAAAAJ0A
+ewMAAAAABAAAAAAAAAAAAAAAAQCsAQAAAAAAAAAAAQAAAA4LAAAFAAQABgAEAAAAEAAMALICAAAQ
+ABkAsgIAAAAAGwCyAi0ANgItALgCAAAAAAA8TW9kdWxlPgBtc2NvcmxpYgBNaWNyb3NvZnQuVmlz
+dWFsQmFzaWMATXlBcHBsaWNhdGlvbgBTQ19hYTg2OTFjODk0ODY0YjA2YWVlZDk2YjIyNjRjZjI2
+Ni5NeQBNeUNvbXB1dGVyAE15UHJvamVjdABNeVdlYlNlcnZpY2VzAFRocmVhZFNhZmVPYmplY3RQ
+cm92aWRlcmAxAE91dHB1dDBCdWZmZXIAU0NfYWE4NjkxYzg5NDg2NGIwNmFlZWQ5NmIyMjY0Y2Yy
+NjYAVXNlckNvbXBvbmVudABDb25uZWN0aW9ucwBWYXJpYWJsZXMAU2NyaXB0TWFpbgBNeVJlc291
+cmNlcwBTQ19hYTg2OTFjODk0ODY0YjA2YWVlZDk2YjIyNjRjZjI2Ni5NeS5SZXNvdXJjZXMATXlT
+ZXR0aW5ncwBNaWNyb3NvZnQuVmlzdWFsQmFzaWMuQXBwbGljYXRpb25TZXJ2aWNlcwBBcHBsaWNh
+dGlvbkJhc2UALmN0b3IATWljcm9zb2Z0LlZpc3VhbEJhc2ljLkRldmljZXMAQ29tcHV0ZXIAU3lz
+dGVtAE9iamVjdAAuY2N0b3IAZ2V0X0NvbXB1dGVyAG1fQ29tcHV0ZXJPYmplY3RQcm92aWRlcgBn
+ZXRfQXBwbGljYXRpb24AbV9BcHBPYmplY3RQcm92aWRlcgBVc2VyAGdldF9Vc2VyAG1fVXNlck9i
+amVjdFByb3ZpZGVyAGdldF9XZWJTZXJ2aWNlcwBtX015V2ViU2VydmljZXNPYmplY3RQcm92aWRl
+cgBBcHBsaWNhdGlvbgBXZWJTZXJ2aWNlcwBFcXVhbHMAbwBHZXRIYXNoQ29kZQBUeXBlAEdldFR5
+cGUAVG9TdHJpbmcAQ3JlYXRlX19JbnN0YW5jZV9fAFQAaW5zdGFuY2UARGlzcG9zZV9fSW5zdGFu
+Y2VfXwBnZXRfR2V0SW5zdGFuY2UATWljcm9zb2Z0LlZpc3VhbEJhc2ljLk15U2VydmljZXMuSW50
+ZXJuYWwAQ29udGV4dFZhbHVlYDEAbV9Db250ZXh0AEdldEluc3RhbmNlAE1pY3Jvc29mdC5TcWxT
+ZXJ2ZXIuVHhTY3JpcHQATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlwZWxpbmUAU2NyaXB0QnVm
+ZmVyAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuUGlwZWxpbmVIb3N0AFBpcGVsaW5lQnVmZmVyAE91dHB1
+dE5hbWVNYXAAQnVmZmVyAEJ1ZmZlckNvbHVtbkluZGV4ZXMAT3V0cHV0TWFwAHNldF9OYW1lAFZh
+bHVlAHNldF9OYW1lX0lzTnVsbABzZXRfU3RyZWV0AHNldF9TdHJlZXRfSXNOdWxsAHNldF9Ib3Vz
+ZU51bWJlcgBzZXRfSG91c2VOdW1iZXJfSXNOdWxsAERhdGVUaW1lAHNldF9EYXRlT2ZCaXJ0aABz
+ZXRfRGF0ZU9mQmlydGhfSXNOdWxsAERlY2ltYWwAc2V0X1ByaWNlAHNldF9QcmljZV9Jc051bGwA
+c2V0X1BlcmNlbnRhZ2UAc2V0X1BlcmNlbnRhZ2VfSXNOdWxsAHNldF9HZW5kZXIAc2V0X0dlbmRl
+cl9Jc051bGwAQWRkUm93AFNldEVuZE9mUm93c2V0AEVuZE9mUm93c2V0AE5hbWUATmFtZV9Jc051
+bGwAU3RyZWV0AFN0cmVldF9Jc051bGwASG91c2VOdW1iZXIASG91c2VOdW1iZXJfSXNOdWxsAERh
+dGVPZkJpcnRoAERhdGVPZkJpcnRoX0lzTnVsbABQcmljZQBQcmljZV9Jc051bGwAUGVyY2VudGFn
+ZQBQZXJjZW50YWdlX0lzTnVsbABHZW5kZXIAR2VuZGVyX0lzTnVsbABTY3JpcHRDb21wb25lbnQA
+RmluaXNoT3V0cHV0cwBNYXJrT3V0cHV0c0ZpbmlzaGVkAFByaW1lT3V0cHV0AE91dHB1dHMAT3V0
+cHV0SURzAEJ1ZmZlcnMAQ3JlYXRlTmV3T3V0cHV0Um93cwBQYXJlbnRDb21wb25lbnQAQ29tcG9u
+ZW50AG51bWJlck9mUm93cwByYW5kb21OYW1lcwBjaGFycwBSYW5kb20AcGlja1JhbmRvbVN0cmlu
+ZwBzdHJpbmdsaXN0AHJuZE51bWJlcgBjcmVhdGVSYW5kb21TdHJpbmcAbWF4AHBpY2tSYW5kb21O
+dW1iZXIAbWluAHBpY2tSYW5kb21EYXRlAGZyb20AdG8AU3lzdGVtLlJlc291cmNlcwBSZXNvdXJj
+ZU1hbmFnZXIAX3Jlc01ncgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBDdWx0dXJlSW5mbwBfcmVzQ3Vs
+dHVyZQBnZXRfUmVzb3VyY2VNYW5hZ2VyAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAEN1bHR1cmUA
+U3lzdGVtLkNvbmZpZ3VyYXRpb24AQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UAbV9WYWx1ZQBtX1N5
+bmNPYmplY3QAZ2V0X1ZhbHVlAFN5c3RlbS5Db21wb25lbnRNb2RlbABFZGl0b3JCcm93c2FibGVB
+dHRyaWJ1dGUARWRpdG9yQnJvd3NhYmxlU3RhdGUAU3lzdGVtLkNvZGVEb20uQ29tcGlsZXIAR2Vu
+ZXJhdGVkQ29kZUF0dHJpYnV0ZQBTeXN0ZW0uRGlhZ25vc3RpY3MARGVidWdnZXJIaWRkZW5BdHRy
+aWJ1dGUATWljcm9zb2Z0LlZpc3VhbEJhc2ljLkNvbXBpbGVyU2VydmljZXMAU3RhbmRhcmRNb2R1
+bGVBdHRyaWJ1dGUASGlkZU1vZHVsZU5hbWVBdHRyaWJ1dGUAU3lzdGVtLkNvbXBvbmVudE1vZGVs
+LkRlc2lnbgBIZWxwS2V5d29yZEF0dHJpYnV0ZQBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZp
+Y2VzAFJ1bnRpbWVIZWxwZXJzAEdldE9iamVjdFZhbHVlAFJ1bnRpbWVUeXBlSGFuZGxlAEdldFR5
+cGVGcm9tSGFuZGxlAEFjdGl2YXRvcgBDcmVhdGVJbnN0YW5jZQBNeUdyb3VwQ29sbGVjdGlvbkF0
+dHJpYnV0ZQBzZXRfVmFsdWUAU3lzdGVtLlJ1bnRpbWUuSW50ZXJvcFNlcnZpY2VzAENvbVZpc2li
+bGVBdHRyaWJ1dGUAc2V0X0l0ZW0AU2V0TnVsbABJbnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uAElu
+dDMyAENMU0NvbXBsaWFudEF0dHJpYnV0ZQBHZXRPdXRwdXRJRABHZXRDb2x1bW5JbmRleGVzAENv
+bnZlcnQAVG9Eb3VibGUAVG9EZWNpbWFsAENoYXIAU3RyaW5nAFNwbGl0AE5leHQAZ2V0X0xlbmd0
+aABnZXRfQ2hhcnMATmV4dERvdWJsZQBUaW1lU3BhbgBvcF9TdWJ0cmFjdGlvbgBnZXRfVGlja3MA
+TWF0aABSb3VuZABvcF9BZGRpdGlvbgBnZXRfRGF0ZQBTU0lTU2NyaXB0Q29tcG9uZW50RW50cnlQ
+b2ludEF0dHJpYnV0ZQBTeXN0ZW0uUmVmbGVjdGlvbgBBc3NlbWJseQBnZXRfQXNzZW1ibHkAU3lz
+dGVtLlRocmVhZGluZwBNb25pdG9yAEVudGVyAEV4aXQARGVidWdnZXJOb25Vc2VyQ29kZUF0dHJp
+YnV0ZQBTQ19hYTg2OTFjODk0ODY0YjA2YWVlZDk2YjIyNjRjZjI2Ni5SZXNvdXJjZXMucmVzb3Vy
+Y2VzAENvbXBpbGF0aW9uUmVsYXhhdGlvbnNBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlB
+dHRyaWJ1dGUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBUYXJnZXRGcmFtZXdvcmtBdHRyaWJ1
+dGUAQXNzZW1ibHlGaWxlVmVyc2lvbkF0dHJpYnV0ZQBHdWlkQXR0cmlidXRlAEFzc2VtYmx5VHJh
+ZGVtYXJrQXR0cmlidXRlAEFzc2VtYmx5Q29weXJpZ2h0QXR0cmlidXRlAEFzc2VtYmx5UHJvZHVj
+dEF0dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAQXNzZW1ibHlEZXNjcmlwdGlvbkF0
+dHJpYnV0ZQBBc3NlbWJseVRpdGxlQXR0cmlidXRlAFNDX2FhODY5MWM4OTQ4NjRiMDZhZWVkOTZi
+MjI2NGNmMjY2LmRsbAAAAACAm0kAcwBOAHUAbABsACAAcAByAG8AcABlAHIAdAB5ACAAYwBhAG4A
+bgBvAHQAIABiAGUAIABzAGUAdAAgAHQAbwAgAEYAYQBsAHMAZQAuACAAQQBzAHMAaQBnAG4AIABh
+ACAAdgBhAGwAdQBlACAAdABvACAAdABoAGUAIABjAG8AbAB1AG0AbgAgAGkAbgBzAHQAZQBhAGQA
+LgAAEU8AdQB0AHAAdQB0ACAAMAAAgI9TAG0AaQB0AGgALABKAG8AaABuAHMAbwBuACwAVwBpAGwA
+bABpAGEAbQBzACwAQgByAG8AdwBuACwASgBvAG4AZQBzACwATQBpAGwAbABlAHIALABEAGEAdgBp
+AHMALABHAGEAcgBjAGkAYQAsAFIAbwBkAHIAaQBnAHUAZQB6ACwAVwBpAGwAcwBvAG4AAH0wADEA
+MgAzADQANQA2ADcAOAA5AEEAQgBDAEQARQBGAEcASABJAEoASwBMAE0ATgBPAFAAUQBSAFMAVABV
+AFYAVwBYAFkAWgBhAGIAYwBkAGUAZgBnAGgAaQBqAGsAbABtAG4AbwBwAHEAcgBzAHQAdQB2AHcA
+eAB5AHoAAAdNACwARgAAMU0AeQAuAFIAZQBzAG8AdQByAGMAZQBzAC4ATQB5AFIAZQBzAG8AdQBy
+AGMAZQBzAAAAAAD5VdFHMoI0TYEyAVXb41WHAAi3elxWGTTgiQiwP19/EdUKOgMgAAEDAAABBAAA
+EgwHBhUSGAESDAQAABIIBwYVEhgBEggEAAASEQcGFRIYARIRBAAAEhQHBhUSGAESFAQIABIMBAgA
+EggECAASEQQIABIUBCABAhwDIAAIBCAAEhUDIAAOAh4ABxABAR4AHgAHMAEBARAeAAITAAQgABMA
+BwYVEhkBEwAEKAATAAiJhF3NgIDMkQkgAwESIR0IEiUEIAEBDgQgAQECBCABAQgFIAEBESkFIAEB
+ES0DIAACAygADgMoAAIDKAAIBCgAESkEKAARLQMGEiQDBhIoAwYSHAsgBAEIHQgdEiESJQMGEjEF
+IAEBEjECBggCBg4GIAIODhI1ByADDg4IEjUHIAMICAgSNQcgAw0NDRI1CgADESkRKREpEjUDBhI5
+AwYSPQQAABI5BAAAEj0FAAEBEj0ECAASOQQIABI9AwYSNAIGHAQAABI0BAgAEjQFIAEBEUkIAQAB
+AAAAAAAFIAIBDg4YAQAKTXlUZW1wbGF0ZQgxMC4wLjAuMAAABAEAAAAGFRIYARIMBhUSGAESCAYV
+EhgBEhEGFRIYARIUBAcBEgwEBwESCAQHARIRBAcBEhQTAQAOTXkuV2ViU2VydmljZXMAABMBAA5N
+eS5BcHBsaWNhdGlvbgAAEAEAC015LkNvbXB1dGVyAAAMAQAHTXkuVXNlcgAABAABHBwDBwECAwcB
+CAYAARIVEWUEBwESFQMHAQ4FEAEAHgAECgEeAAQHAR4AByAEAQ4ODg5hAQA0U3lzdGVtLldlYi5T
+ZXJ2aWNlcy5Qcm90b2NvbHMuU29hcEh0dHBDbGllbnRQcm90b2NvbBJDcmVhdGVfX0luc3RhbmNl
+X18TRGlzcG9zZV9fSW5zdGFuY2VfXwAAAAYVEhgBEwAGFRIZARMABAoBEwAFIAEBEwAIBwMTABMA
+EwAFAQAAAAAFIAIBCBwGAAIIEiUOBSABHQgIBAcCCAgGIAMBCAgIBAABDQgFAAERLQ0IBwQICBEp
+ESkGIAEdDh0DBCABCAgHBwMOHQ4dAwUgAggICAQgAQMIBSABAR0DBwcEDh0DCAgDIAANAwcBDQkA
+AhGAjREpESkDIAAKBAABDQ0EIAEBCgkAAhEpESkRgI0EIAARKQwHBBEpEYCNEYCNESkFIAASgJkH
+IAIBDhKAmQYHAhI5EjkEBwESPQgBAAIAAAAAAAQAAQEcBAcBEjQIAQAIAAAAAAAeAQABAFQCFldy
+YXBOb25FeGNlcHRpb25UaHJvd3MBRwEAGi5ORVRGcmFtZXdvcmssVmVyc2lvbj12NC4wAQBUDhRG
+cmFtZXdvcmtEaXNwbGF5TmFtZRAuTkVUIEZyYW1ld29yayA0DAEABzEuMC4wLjAAACkBACRkMmJm
+YjBmNS0wNjc5LTRkZDctYWEyNi02NGRiZWM4MzgyNzMAAAUBAAEAABYBABFDb3B5cmlnaHQgQCAg
+MjAxNAAAKAEAI1NDX2FhODY5MWM4OTQ4NjRiMDZhZWVkOTZiMjI2NGNmMjY2AACIRwAAAAAAAAAA
+AACeRwAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkEcAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29y
+ZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABABAAAAAY
+AACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAAAABIAAAAWGAAAIAD
+AAAAAAAAAAAAAIADNAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBPAAAAAAC9BO/+AAAB
+AAAAAQAAAAAAAAABAAAAAAA/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAAAAEAVgBhAHIA
+RgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBvAG4AAAAAAAAAsATg
+AgAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAAC8AgAAAQAwADAAMAAwADAANABiADAA
+AABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAAUwBDAF8AYQBhADgANgA5
+ADEAYwA4ADkANAA4ADYANABiADAANgBhAGUAZQBkADkANgBiADIAMgA2ADQAYwBmADIANgA2AAAA
+MAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADAALgAwAAAAcAAoAAEASQBu
+AHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwBhAGEAOAA2ADkAMQBjADgAOQA0ADgANgA0AGIA
+MAA2AGEAZQBlAGQAOQA2AGIAMgAyADYANABjAGYAMgA2ADYALgBkAGwAbAAAAEgAEgABAEwAZQBn
+AGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcAaAB0ACAAQAAgACAAMgAwADEA
+NAAAAHgAKAABAE8AcgBpAGcAaQBuAGEAbABGAGkAbABlAG4AYQBtAGUAAABTAEMAXwBhAGEAOAA2
+ADkAMQBjADgAOQA0ADgANgA0AGIAMAA2AGEAZQBlAGQAOQA2AGIAMgAyADYANABjAGYAMgA2ADYA
+LgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAAAAAAUwBDAF8AYQBhADgANgA5
+ADEAYwA4ADkANAA4ADYANABiADAANgBhAGUAZQBkADkANgBiADIAMgA2ADQAYwBmADIANgA2AAAA
+NAAIAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAADgACAAB
+AEEAcwBzAGUAbQBiAGwAeQAgAFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAMAAAAsDcAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_aa8691c894864b06aeed96b2264cf266</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages, Microsoft.SqlServer.VSTAScriptingLib, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">VisualBasic</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum"
+                  typeConverter="NOTBROWSABLE">286c69d889218c11e8b1f6b096eaf069</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.ScriptComponentHost, Microsoft.SqlServer.TxScript, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+              </properties>
+              <outputs>
+                <output
+                  refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB.Outputs[Output 0]"
+                  hasSideEffects="true"
+                  name="Output 0">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB.Outputs[Output 0].Columns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB.Outputs[Output 0].Columns[Name]"
+                      name="Name" />
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB.Outputs[Output 0].Columns[Street]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB.Outputs[Output 0].Columns[Street]"
+                      name="Street" />
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB.Outputs[Output 0].Columns[HouseNumber]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB.Outputs[Output 0].Columns[HouseNumber]"
+                      name="HouseNumber" />
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB.Outputs[Output 0].Columns[DateOfBirth]"
+                      dataType="date"
+                      lineageId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB.Outputs[Output 0].Columns[DateOfBirth]"
+                      name="DateOfBirth" />
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB.Outputs[Output 0].Columns[Price]"
+                      dataType="cy"
+                      lineageId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB.Outputs[Output 0].Columns[Price]"
+                      name="Price" />
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB.Outputs[Output 0].Columns[Percentage]"
+                      dataType="numeric"
+                      lineageId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB.Outputs[Output 0].Columns[Percentage]"
+                      name="Percentage"
+                      precision="5"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB.Outputs[Output 0].Columns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB.Outputs[Output 0].Columns[Gender]"
+                      name="Gender" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DFT - Dummy Data.Paths[Output 0]"
+              endId="Package\DFT - Dummy Data\DER - DoSomething 1.Inputs[Derived Column Input]"
+              name="Output 0"
+              startId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#.Outputs[Output 0]" />
+            <path
+              refId="Package\DFT - Dummy Data.Paths[Output 01]"
+              endId="Package\DFT - Dummy Data\DER - DoSomething 2.Inputs[Derived Column Input]"
+              name="Output 0"
+              startId="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB.Outputs[Output 0]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql11">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="170,42"
+          Id="Package\DFT - Dummy Data"
+          TopLeft="145.714288195785,95.435295456091" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DFT - Dummy Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="212.8,41.6"
+          Id="Package\DFT - Dummy Data\DER - DoSomething 1"
+          TopLeft="5.49999999999997,107.1" />
+        <NodeLayout
+          Size="212.8,41.6"
+          Id="Package\DFT - Dummy Data\SCR_SRC - Dummy Data C#"
+          TopLeft="5.49999999999997,5.50000000000007" />
+        <EdgeLayout
+          Id="Package\DFT - Dummy Data.Paths[Output 0]"
+          TopLeft="111.9,47.1000000000001">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="211.2,41.6"
+          Id="Package\DFT - Dummy Data\SCR_SRC - Dummy Data VB"
+          TopLeft="279.3,5.50000000000007" />
+        <NodeLayout
+          Size="211.2,41.6"
+          Id="Package\DFT - Dummy Data\DER - DoSomething 2"
+          TopLeft="279.3,107.1" />
+        <EdgeLayout
+          Id="Package\DFT - Dummy Data.Paths[Output 01]"
+          TopLeft="384.9,47.1000000000001">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,18.25,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

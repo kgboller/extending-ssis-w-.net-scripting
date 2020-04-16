@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">REZA-VAIO</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOt/5EiN04UqNKTEcvFwpFwAAAAACAAAAAAAQZgAAAAEAACAAAACIeG5Qa1nBMncDhyhMwXYkaUZnb0Km0SOvbhX9qH6ivAAAAAAOgAAAAAIAACAAAABTQLxEC5aTLOOqcMWpGWmvct6BHUGxeqP2M/ldxUrGepAAAAD5iciD1K7QYq8Ytw3x8cXMIDSk32UL2Q9eiLlBFD27idmDJ4oWtuKIXwZs9Xb70ByVJzA4bFY8k5JUbZ6PHnTV0aBPWpOjq8LDLT4Ag4FVNHwfEyd4lW7rrG2MA6BWVlZB/3A/kL0yBAtxdRIamfxnVNHYZbivLf6XYk9266ubY3buGkDoP8mZyxdhXa9VIZhAAAAAwS3UB7KV0DjtfzAcvOAL2gDl6ult49Qx60EhTJmABaVdsmIchqR8zVHwGxzkFz77y/BP7+uqAJaVWMHIkKqrMQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8EX/gijqYkW+h4VGX9G8bQAAAAACAAAAAAAQZgAAAAEAACAAAAClVRJGbRduej0HHbuW1Yj6KX8Cw1mZYW4N+yr82hgvNAAAAAAOgAAAAAIAACAAAAClBLYKWq5+VTbpFbWDwig6d0uvMnHc/pRKOiL8TP+kXpAAAABNzbnQyQ1oiVfrgJq1kJjRgCXfflJH25bjkySWeqgo8Gsksdm/2FF/ad/F0Uauf7IIGn1iXMJnPqQo2lDfp34snema9HVlMNxqhOefbK70lN03M2YeWeyrrOK33HBX9r4MnegeTMJ5wNlPt6beBqw/cSHfsRXeuYNK7NsuXLNuoq1hcDIQa9Z7TmuJon6rZ7lAAAAAUgKAQtttGtapjry3PwUveNMRimtqWM8j48KAEzhn1BOnUU0L29Fad1bF/rJFTtM82LnRPbp/rVBTa8u66it+6g==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -45,10 +45,10 @@
                 <SSIS:Property SSIS:Name="Name">01 - Get File Properties</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">9</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">10</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{4D5A2CFA-DF60-4226-9F31-31849E2F9704}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{EA1039A8-2A13-4E51-B818-93A405455B60}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -357,8 +357,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
